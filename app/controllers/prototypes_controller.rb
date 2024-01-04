@@ -54,7 +54,7 @@ class PrototypesController < ApplicationController
   end  
 
   def contributor_confirmation
-    redirect_to prototype_path unless current_user == @prototype.user
+    redirect_to root_path unless current_user == @prototype.user
   end
 
   def move_to_index
